@@ -1,0 +1,33 @@
+@use '../../lib/service.scss' as s;
+
+
+.alert{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: s.space(4);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: s.space(4);
+    gap: s.space(2);
+    box-shadow: 2px 2px 6px 0px gray;
+
+
+    &__title{
+        font-size: 18px;
+        display: block;
+        font-weight: bold;
+        margin-bottom: s.space(4);  
+    
+    }
+
+    &__button{
+        padding: s.space(3) s.space(16);
+        border-radius: 4px; 
+        background-color: blue;
+        color: s.color('lighter');
+        text-decoration: none;
+    }
+
+}

@@ -1,0 +1,62 @@
+@use '../../lib/service.scss' as s;
+
+
+.list{
+    display: flex;
+    flex-direction: column;
+    padding: s.space(6);
+    gap: s.space(12);
+
+    .list__title{
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: s.space(1);
+        color: s.color('primary');
+    }
+
+    .product__list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap:s.space(12);
+        column-gap: s.space(5);        
+    }
+
+    .product__card{
+        display: flex;
+        flex-direction: column;
+        gap: s.space(4);
+        box-shadow: 2px 2px 6px 0px gray;
+        padding: s.space(4);
+        border-radius: s.space(2);       
+    }
+
+    .card__name{
+        font-weight: bold;
+    }
+
+    .card__id{
+        color: s.color('dark');
+
+    }
+
+    .card_info{
+        display: flex;
+        justify-content: space-between;
+        gap: s.space(2);
+    }
+
+    .card__price{
+        font-weight: bold;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: s.space(10);
+    max-width: 1000px;
+    margin: 0 auto;
+}

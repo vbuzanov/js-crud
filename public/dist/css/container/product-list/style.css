@@ -1,0 +1,53 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 48px;
+}
+.list .list__title {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 4px;
+  color: blue;
+}
+.list .product__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 48px;
+  column-gap: 20px;
+}
+.list .product__card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 2px 2px 6px 0px gray;
+  padding: 16px;
+  border-radius: 8px;
+}
+.list .card__name {
+  font-weight: bold;
+}
+.list .card__id {
+  color: #b8b7b7;
+}
+.list .card_info {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.list .card__price {
+  font-weight: bold;
+}
+.list a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */
