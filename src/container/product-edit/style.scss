@@ -6,7 +6,7 @@
     flex-direction: column;
     padding: s.space(4);
     gap: s.space(8);
-
+ 
     &__title{
         font-size: 18px;
         font-weight: bold;
@@ -68,15 +68,6 @@
       
     }
 
-
-    // &__buts .form__button{
-    //    
-    // }
-
-    // &__buts > button{
-    //     background-color: blue !important;
-    // }
-
     &__button{
         text-align: center;
         display: flex;
@@ -87,7 +78,6 @@
 
     
     &__button > button{
-        // display: inline-block;
         background-color: blue;    
         color: s.color('lighter');
         width: 100%;
